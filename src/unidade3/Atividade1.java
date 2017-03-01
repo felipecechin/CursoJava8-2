@@ -14,13 +14,14 @@ public class Atividade1 {
 	}
 	<T> T[] swap(T vetorNovo[],int posicao1,int posicao2) {
 		T varTemp;
-		for (int i=0;i<vetorNovo.length;i++) {
+		T outroVetor[] = vetorNovo;
+		for (int i=0;i<outroVetor.length;i++) {
 			if (i==posicao1) {
-				varTemp = vetorNovo[posicao1];
-				vetorNovo[posicao1] = vetorNovo[posicao2];
-				vetorNovo[posicao2] = varTemp;
+				varTemp = outroVetor[posicao1];
+				outroVetor[posicao1] = outroVetor[posicao2];
+				outroVetor[posicao2] = varTemp;
 			}
 		}
-		return vetorNovo;
+		return outroVetor;
 	}
 }
