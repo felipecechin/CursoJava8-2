@@ -61,7 +61,7 @@ public class Client extends Thread {
 	}
 
 	Utilities.printMsg("writing current date");
-
+	
 	Date d = new Date();
 	out.println(d);
 
