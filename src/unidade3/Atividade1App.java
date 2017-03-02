@@ -24,13 +24,14 @@ public class Atividade1App {
 		System.out.println("Digite outra posição: ");
 		posicao2 = scn.nextInt();
 			
-		Atividade1 obj = new Atividade1();
-		Integer vetorNovo[] = obj.<Integer>swap(vetor, posicao1, posicao2);
-		
 		System.out.println("VETOR:");
 		for (int valor1:vetor) {
 			System.out.println(valor1);
 		}
+		
+		Atividade1 obj = new Atividade1();
+		Integer vetorNovo[] = obj.<Integer>swap(vetor, posicao1, posicao2);
+		
 		
 		System.out.println("VETOR COM POSIÇÕES TROCADAS:");
 		for (int valor2:vetorNovo) {
