@@ -24,7 +24,7 @@ public class JogadorApp {
 		Collections.sort(lista);
 		
 		int i=0;
-		for (Jogador jog:lista) {
+		for (Jogador jog:lista) { 
 			if (i==5) {
 				break;
 			}
